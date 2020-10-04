@@ -8,4 +8,4 @@ go build && ./go-api
 ```
 Have fun
 
-Credits:  https://www.youtube.com/watch?v=HQoPScmuHXw
+Credits:  https://www.youtube.com/watch?v=SonwZ6MF5BE
