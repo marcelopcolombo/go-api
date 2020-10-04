@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "go-api",
+		"_postman_id": "5ec13d21-4f24-166c-1530-4cd8f25572b0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get projects",
+			"request": {
+				"url": "http://localhost:8000/api/projects",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get project by id",
+			"request": {
+				"url": "http://localhost:8000/api/projects/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create project",
+			"request": {
+				"url": "http://localhost:8000/api/projects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"tdd\",\n    \"category\": \"test\",\n    \"author\": {\n        \"firstname\": \"Marcelo\",\n        \"lastname\": \"Colombo\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit project",
+			"request": {
+				"url": "http://localhost:8000/api/projects/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"tdd\",\n    \"category\": \"test\",\n    \"author\": {\n        \"firstname\": \"Marcelo\",\n        \"lastname\": \"Colombo\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete project by id",
+			"request": {
+				"url": "http://localhost:8000/api/projects/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
